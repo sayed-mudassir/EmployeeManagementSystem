@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="create-section">
+        <button id="modal-toggel-button">add employee</button>
+        <div class="modal hide-modal" id="modal">
+            <div class="modal-body">
+                <span class="material-symbols-outlined close-icon" id="close-icon">
+                    close
+                    </span>
+                <h2>Enter Employee Details</h2>
+                <form id="form">
+                    <div class="form-item">
+                        <label for="name">name : </label>
+                        <input type="text" name="fullname" id="name">
+                    </div>
+                    <div class="form-item">
+                        <label for="email">email :</label>
+                        <input type="email" name="Email" id="email">
+                    </div>
+                    <div class="form-item">
+                        <label for="Role">Role : </label>
+                        <select name="role" id="Role">
+                            <option value="SDE">SDE</option>
+                            <option value="Product Analyst">Product Analyst</option>
+                            <option value="Data Scientist">Data Scientist</option>
+                        </select>
+                    </div>
+                    <div class="form-item">
+                        <label for="DOJ">Date Of Joining : </label>
+                        <input type="date" name="DOJ" id="DOJ">
+                    </div>
+                    <div class="form-item">
+                        <div class="gender">
+                            <label for="male">Male </label>
+                            <input type="radio" name="gender" id="male">
+                        </div>
+                        <div class="gender">
+                            <label for="Female">Female </label>
+                            <input type="radio" name="gender" id="Female">
+                        </div>
+                    </div>
+                    <button>Add Employee</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <table class="employee-list" id="employee-list" >
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Employee ID</th>
+                <th>Role</th>
+                <th>Date Of Joining</th>
+                <th>Gender</th>
+                <th>Options</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script src="./script.js"></script>
+</body>
+</html>
