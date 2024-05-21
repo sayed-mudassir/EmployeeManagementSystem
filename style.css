@@ -47,3 +47,18 @@
     padding: 10px;
     text-align: center;
 }
+.center-modal{
+    
+    align-items: center;
+    justify-content: center;
+}
+.update-modal-body{
+    width: 450px;
+}
+.close-icon2{
+    position: absolute;
+    top: 310px;
+    /* left: 50px; */
+    right: 500px;
+    cursor: pointer;
+}

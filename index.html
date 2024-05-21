@@ -55,6 +55,46 @@
             </div>
         </div>
     </div>
+    <div class="modal center-modal hide-modal" id="modal1">
+        <div class="modal-body update-modal-body">
+            <span class="material-symbols-outlined close-icon2" id="close-icon2">
+                close
+                </span>
+            <form id="updateForm">
+                <div class="form-item">
+                    <label for="name">name : </label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="form-item">
+                    <label for="email">email :</label>
+                    <input type="email" name="Email" id="email">
+                </div>
+                <div class="form-item">
+                    <label for="Role">Role : </label>
+                    <select name="role" id="Role">
+                        <option value="SDE">SDE</option>
+                        <option value="Product Analyst">Product Analyst</option>
+                        <option value="Data Scientist">Data Scientist</option>
+                    </select>
+                </div>
+                <div class="form-item">
+                    <label for="DOJ">Date Of Joining : </label>
+                    <input type="date" name="DOJ" id="DOJ">
+                </div>
+                <div class="form-item">
+                    <div class="gender">
+                        <label for="male">Male </label>
+                        <input type="radio" name="gender" id="male">
+                    </div>
+                    <div class="gender">
+                        <label for="Female">Female </label>
+                        <input type="radio" name="gender" id="Female">
+                    </div>
+                </div>
+                <button>Add Employee</button>
+            </form>
+        </div>
+    </div>
     <table class="employee-list" id="employee-list" >
         <thead>
             <tr>
